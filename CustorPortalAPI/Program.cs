@@ -39,6 +39,7 @@ builder.Services.AddAuthentication(options =>
 
 
 
+
 // Add database
 builder.Services.AddDbContext<CustorPortalDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"),
